@@ -32,14 +32,6 @@ python -m pip install pymongo
 python -m pip install dnspython
 ```
 
-### Configuration
-
-Assurez-vous de configurer votre chaîne de connexion MongoDB Atlas dans le fichier principal (`main.py`) :
-
-```python
-cluster = MongoClient("mongodb+srv://<username>:<password>@cluster0.kafpl.mongodb.net/...")
-```
-
 ## 🔌 Endpoints de l'API
 
 ### 🔍 Consultation (GET)
@@ -75,4 +67,5 @@ Toutes les modifications sont enregistrées dans la collection `update`.
 * **Langage :** Python
 * **Framework Web :** Flask (Micro-framework)
 * **SGBD :** MongoDB (Atlas Cloud)
+
 * **Driver :** PyMongo
