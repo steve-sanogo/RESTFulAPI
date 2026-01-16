@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from _datetime import datetime  # allow us to get the time and date when a document is modify
 import os
+from dotenv import load_dotenv
 
 load_dotenv()
 mongo_uri = os.getenv("MONGO_URI")
@@ -281,3 +282,4 @@ def addCountry():
 
 if __name__ == '__main__':
     app.run()
+
